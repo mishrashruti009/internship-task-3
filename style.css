@@ -1,0 +1,101 @@
+body{
+font-family: 'Segoe UI', sans-serif;
+margin:0;
+background: linear-gradient(135deg,#f3d6ff,#d6f4ff);
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+transition:0.3s;
+}
+body.dark{
+background:#1e1e1e;
+color:white;
+}
+.app{
+width:850px;
+background:white;
+padding:30px;
+border-radius:18px;
+box-shadow:0 15px 40px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+body.dark .app{
+background:#2b2b2b;
+}
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+}
+
+button{
+padding:10px 14px;
+border:none;
+border-radius:8px;
+background:#7c6cff;
+color:white;
+cursor:pointer;
+transition:0.2s;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+.create-list{
+display:flex;
+gap:10px;
+margin-bottom:25px;
+}
+
+input{
+flex:1;
+padding:10px;
+border-radius:8px;
+border:1px solid #ccc;
+outline:none;
+}
+.list{
+background:#fafafa;
+padding:15px;
+border-radius:12px;
+margin-bottom:20px;
+transition:0.2s;
+}
+body.dark .list{
+background:#3a3a3a;
+}
+.list-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:10px;
+}
+.tasks li{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:8px;
+border-radius:6px;
+margin-bottom:6px;
+background:#f1f1f1;
+transition:0.2s;
+}
+.tasks li:hover{
+transform:translateX(4px);
+}
+body.dark .tasks li{
+background:#4b4b4b;
+}
+.completed{
+text-decoration:line-through;
+opacity:0.6;
+}
+.delete{
+cursor:pointer;
+color:red;
+margin-left:10px;
+}
