@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Todo Workspace</title>
+<title>Todo App</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,19 +11,20 @@
 <div class="app">
 
 <div class="header">
-<h1>✨ Todo Workspace</h1>
-<button id="notification">🔔 <span id="count">0</span></button>
+<h1>✨ My Tasks</h1>
+<button id="themeToggle">🌙</button>
 </div>
 
-<div class="create-list">
-<input id="listInput" placeholder="Create new list...">
-<button id="createList">Create</button>
+<div class="input-box">
+<input id="taskInput" placeholder="Enter task...">
+<input type="datetime-local" id="taskTime">
+<button id="addBtn">Add</button>
 </div>
 
-<div id="listsContainer"></div>
+<ul id="taskList"></ul>
 
 </div>
 
-<script src="script.js"></script>
+<script src="dist/script.js"></script>
 </body>
 </html>
